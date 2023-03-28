@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { SectionEl, SectionTitle } from './Section.styled';
 
 export function Section({ title, children }) {
@@ -8,3 +10,7 @@ export function Section({ title, children }) {
     </SectionEl>
   );
 }
+
+Section.propTypes = {
+  title: PropTypes.string,
+};
